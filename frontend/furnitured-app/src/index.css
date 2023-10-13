@@ -1,0 +1,144 @@
+/* --- Reset --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
+}
+/* --- Reset --- */
+
+/* --- Variables --- */
+:root {
+  --bg-img-layer: -10;
+  --nav-layer: 10;
+  
+}
+/* --- Variables --- */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@media only screen and (min-width: 1000px) {
+
+  .floor {
+    height: 7vh;
+    border-bottom: black solid 2px;
+  } 
+
+  .tables {
+    max-width: 13em;
+    position: absolute;
+    top: 45%;
+    right: 30%;
+    cursor: pointer;
+  }
+  .chairs {
+    max-width: 20em;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    cursor: pointer;
+  }
+  .cabinets {
+    max-width: 25em;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    cursor: pointer;
+  }
+  .carpets {
+    max-width: 22em;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    cursor: pointer;
+  }
+  .lamps {
+    max-width: 23em;
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    cursor: pointer;
+  }
+  .frames {
+    max-width: 10em;
+    position: absolute;
+    top: 10%;
+    right: 30%;
+    cursor: pointer;
+  } 
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .swiper {
+    width: 14em;
+    height: 18em;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: .7em;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: itim;
+    color: black;
+  }
+  .swiper-slide:nth-child(1n) {
+    background-color: rgb(221, 222, 231);
+  }
+  
+  .cards {
+    background-color: white;
+    border-radius: .2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid 3px;
+  }
+  img {
+    width:100%;
+    height:80%;
+  }
+  .text {
+    font-size: .8em;
+    padding: 1em;
+    line-height: 1em;
+    text-align: center;
+  }
+}
+
+
+
+
+.drawer-handle {
+  box-shadow: 5px 3px 5px rgb(107, 107, 117);
+}
+.header-name {
+  font-family: 'Italianno', cursive;
+}
+.footer-name {
+  font-family: 'Brygada 1918', serif;
+  font-style: italic;
+}
